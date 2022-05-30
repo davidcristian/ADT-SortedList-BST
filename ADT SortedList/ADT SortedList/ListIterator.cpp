@@ -63,8 +63,7 @@ void ListIterator::next()
 	if (!this->valid())
 		throw std::exception();
 
-	Node* node = this->stack.top();
-	stack.pop();
+	Node* node = this->stack.pop();
 
 	if (node->right != nullptr)
 	{
