@@ -41,7 +41,7 @@ public:
 	bool empty() { return this->size == 0; }
 
 	void push(T elem) { if (this->size == this->capacity) this->resize(); this->data[this->size++] = elem; }
-	void pop() { this->size--; }
+	T pop() { return this->data[this->size-- - 1]; }
 	T top() { return this->data[this->size - 1]; }
 };
 
