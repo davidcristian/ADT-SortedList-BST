@@ -63,8 +63,7 @@ TComp SortedIndexedList::getElement(int pos) const
 		}
 
 		// current is null, we have reached the leftmost node
-		current = stack.top();
-		stack.pop();
+		current = stack.pop();
 
 		// check if position was found
 		if (index == pos)
